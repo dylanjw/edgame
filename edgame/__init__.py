@@ -1,17 +1,15 @@
 #definitions
+listone = [1, 3, 5]
+listtwo = [7, 5, 1]
+listthree = []
+listfour = [1, 5, 3]
 
+def is_increasing(l):
+    # put your code below
+    pass
 
-personsname = input("type in your name - ")
-place = input("where are you - ")
-def function_printpersonsnameandplace(thename, theplace):
-    print(
-            "the persons name is "
-            + thename
-            + " and they are in the place called "
-            + theplace
-    )
-
-
-#executable shit
-
-function_printpersonsnameandplace(personsname, place)
+#Executable shit
+assert is_increasing(listone) is True
+assert is_increasing(listtwo) is False
+assert is_increasing(listthree) is False
+assert is_increasing(listfour) is False
